@@ -1,0 +1,32 @@
+.accueil {
+	display: flex;
+
+	height:100vh;
+	width: 100vw;
+
+	align-items: space-between;
+
+}
+.accueil__title {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	background-color: $rose;
+
+
+}
+.accueil__img {
+	width: 100vw;
+	height: 100vw;
+
+	background-color: $black;
+}
+.accueil__scroll {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	background-color: $rose;
+	
+}
