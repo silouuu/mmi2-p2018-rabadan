@@ -27,6 +27,12 @@ function templates() {
     .pipe(sync.stream());
 }
 
+function html() {
+  return gulp.src('src/pages/**/*.html')
+    
+    .pipe(gulp.dest('dist/'))
+    .pipe(sync.stream());
+}
 /**
  * SCSS
  */

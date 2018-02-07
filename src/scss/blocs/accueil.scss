@@ -1,10 +1,6 @@
 .accueil {
-	display: flex;
 
-	height:100vh;
-	width: 100vw;
-
-	align-items: space-between;
+	background-color: $rose;
 
 }
 .accueil__title {
@@ -12,21 +8,64 @@
 	align-items: center;
 	justify-content: center;
 
-	background-color: $rose;
+	height: 100%;
 
+	font-family: 'Bungee Shade', cursive;
+	color: $black;
+	text-align: center;
+	font-size: 7rem;
+	line-height: 8rem;
 
+	&:hover{
+		color: white;
+	}
 }
+
 .accueil__img {
 	width: 100vw;
 	height: 100vw;
 
-	background-color: $black;
 }
 .accueil__scroll {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 
-	background-color: $rose;
+	height: 50%;
+
+
+	font-family: 'Permanent Marker', cursive;
+	font-size: 4rem;
+
 	
 }
+.accueil__scroll:hover{
+		color: white;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
