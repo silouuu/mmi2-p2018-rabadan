@@ -1,0 +1,125 @@
+.menu {
+	justify-content: space-between;
+
+}
+.menu__header {
+	display: flex;
+
+	justify-content: space-around;
+	align-items: center;
+	height: 10vh;
+
+	font-size: 100px;
+}
+.menu__header__logo {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-grow: 1;
+	height: 100%;
+}
+.menu__header__logo a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+}
+.menu__header__logo img {
+	width: 200%;
+	height: auto;
+}
+
+.menu__header__icon img {
+	height: 40%;
+}
+.menu__header__icon {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-grow: 1;
+	height: 100%;
+}
+.menu__header > p {
+	flex-grow: 3;
+	text-align: center;
+}
+
+
+.menu__photo {
+	position: relative;
+	background-image: url(../img/shoes_jump.jpg);
+	background-size: cover;
+	background-position: center;
+	width: 100vw;
+	height: 50vh;
+	
+}
+.menu__photo p {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	width: 80%;
+	text-align: justify;
+	color: white;
+	font-size: 3vh;
+	font-family: 'Dosis', sans-serif;
+
+}
+.menu__photo a {
+	position: absolute;
+	bottom: 30px;
+	right: 30px;
+	font-size: 4vh;
+	background-color: white;
+	padding: 10px;
+	display: flex;
+    align-items: center;
+
+
+}
+.menu__photo a img {
+	height: 5vw;
+}
+
+.menu__produits {
+	display: flex;
+	flex-direction: column;
+	width: 100vw;
+}
+.menu__produits h2 {
+	padding: 10px;
+	color: white;
+	text-align: center;
+}
+.menu__produits__photos {
+	display: flex;
+}
+.menu__produits img{
+	width: 25vw;
+	height: 25vw;
+}
+
+
+.menu article {
+	background-color: grey;
+	height: 10vh;
+}
+.menu div {
+	background-color: grey;
+}
+
+.menu footer {
+	height: 8vh;
+	background-color: black;
+}
+
+
+
+
+
+
+
+
+
+
+

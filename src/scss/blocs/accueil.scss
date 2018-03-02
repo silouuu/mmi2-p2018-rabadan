@@ -6,7 +6,7 @@
 .accueil__title {
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-around;
 
 	height: 100%;
 
@@ -20,7 +20,12 @@
 		color: white;
 	}
 }
-
+.accueil__logo {
+	height: 50%;
+}
+.accueil__logo img {
+	width: 30%;
+}
 .accueil__img {
 	width: 100vw;
 	height: 100vw;
