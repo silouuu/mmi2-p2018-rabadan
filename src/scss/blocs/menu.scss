@@ -1,50 +1,6 @@
 .menu {
-	justify-content: space-between;
-
-}
-.menu__header {
-	display: flex;
-
-	justify-content: space-around;
-	align-items: center;
-	height: 10vh;
-
-	font-size: 100px;
-}
-.menu__header__logo {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-grow: 1;
-	height: 100%;
-}
-.menu__header__logo a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50px;
-}
-.menu__header__logo img {
-	width: 200%;
 	height: auto;
 }
-
-.menu__header__icon img {
-	height: 40%;
-}
-.menu__header__icon {
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-	flex-grow: 1;
-	height: 100%;
-	padding: 10px;
-}
-.menu__header > p {
-	flex-grow: 3;
-	text-align: center;
-}
-
 
 .menu__photo {
 	position: relative;
@@ -61,7 +17,7 @@
 	right: 30px;
 	width: 80%;
 	text-align: justify;
-	color: white;
+	color: $white;
 	font-size: 3vh;
 	font-family: 'Dosis', sans-serif;
 
@@ -70,22 +26,24 @@
 	position: absolute;
 	bottom: 30px;
 	right: 30px;
-	font-size: 4vh;
-	background-color: white;
-	padding: 10px;
-	display: flex;
+	width: 30vw;
+    display: flex;
     align-items: center;
-
-
+    justify-content: space-around;
+	font-size: 4vh;
+	background-color: $white;
+	padding: 10px;
+	
 }
 
 .menu__photo a img {
 	height: 5vw;
 }
-.menu__article {
+.menu article {
+	height: 10vh;
 	color: white;
-	font-size: 3vh;
-	font-family: 'Dosis', sans-serif;
+	background-color: grey;
+	
 }
 .menu__produits {
 	display: flex;
@@ -93,34 +51,24 @@
 	width: 100vw;
 }
 .menu__produits h2 {
-	padding: 10px;
-	color: white;
+	padding: 20px;
+	background-color: $white;
+	color: $black;
+	text-decoration: underline;
 
-	font-family: 'Dosis', sans-serif;
     font-size: 4vh;
 	text-align: center;
 }
 .menu__produits__photos {
 	display: flex;
+	flex-wrap: wrap;
 }
 .menu__produits img{
-	width: 25vw;
-	height: 25vw;
+	width: 50%;
+    height: 20%;
 }
 
 
-.menu article {
-	background-color: grey;
-	height: 10vh;
-}
-.menu div {
-	background-color: grey;
-}
-
-.menu footer {
-	height: 8vh;
-	background-color: black;
-}
 
 
 

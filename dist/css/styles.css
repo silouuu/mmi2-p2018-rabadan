@@ -1,4 +1,3 @@
-@charset "UTF-8";
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -48,8 +47,10 @@ a {
 * {
   box-sizing: border-box; }
 
-* {
-  color: #231F20; }
+p, a, h1, h2, h3, h4 {
+  color: #231F20;
+  font-family: 'Dosis', sans-serif;
+  font-size: 2rem; }
 
 section {
   display: flex;
@@ -58,74 +59,35 @@ section {
   height: 100vh;
   width: 100vw; }
 
-.accueil {
-  background-color: #E7C3BB; }
-
-.accueil__title {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  height: 100%;
-  font-family: 'Bungee Shade', cursive;
-  color: #231F20;
-  text-align: center;
-  font-size: 7rem;
-  line-height: 8rem; }
-  .accueil__title:hover {
-    color: white; }
-
-.accueil__logo {
-  height: 50%; }
-
-.accueil__logo img {
-  width: 30%; }
-
-.accueil__img {
-  width: 100vw;
-  height: 100vw; }
-
-.accueil__scroll {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 50%;
-  font-family: 'Permanent Marker', cursive;
-  font-size: 4rem; }
-
-.accueil__scroll:hover {
-  color: white; }
-
-.menu {
-  justify-content: space-between; }
-
-.menu__header {
+header {
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 10vh;
+  background-color: #F6F6F6;
   font-size: 100px; }
 
-.menu__header__logo {
+.header__logo {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-grow: 1;
   height: 100%; }
 
-.menu__header__logo a {
+.header__logo a {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 50px; }
 
-.menu__header__logo img {
+.header__logo img {
   width: 200%;
   height: auto; }
 
-.menu__header__icon img {
+.header__icon img {
   height: 40%; }
 
-.menu__header__icon {
+.header__icon {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -133,9 +95,79 @@ section {
   height: 100%;
   padding: 10px; }
 
-.menu__header > p {
+.header > p {
   flex-grow: 3;
-  text-align: center; }
+  text-align: center;
+  font-family: 'Bungee Shade';
+  font-size: 5rem; }
+
+footer {
+  background-color: #231F20;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 15px; }
+
+footer p, footer a {
+  font-size: 2rem;
+  color: white; }
+
+footer a {
+  padding: 0px 10px;
+  border-right: 2px solid white;
+  border-left: 2px solid white; }
+
+footer > div {
+  margin: 20px; }
+
+.accueil {
+  background-color: #E7C3BB; }
+
+.accueil__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 50%;
+  font-family: 'Bungee Shade', cursive;
+  color: #231F20;
+  text-align: center;
+  font-size: 7rem;
+  line-height: 8rem;
+  padding: 20px; }
+  .accueil__title:hover {
+    color: white; }
+
+.accueil__title h1 {
+  padding: 5px;
+  font-family: 'Bungee Shade';
+  font-size: 6rem; }
+
+.accueil__title > img {
+  height: 20%; }
+
+.accueil__img {
+  width: 100vw;
+  height: 100vw; }
+
+.accueil__scroll {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 30%;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 4rem; }
+
+.accueil__scroll h1 {
+  font-size: 4rem; }
+
+.accueil__scroll img {
+  height: 8vh; }
+
+.menu {
+  height: auto; }
 
 .menu__photo {
   position: relative;
@@ -151,7 +183,7 @@ section {
   right: 30px;
   width: 80%;
   text-align: justify;
-  color: white;
+  color: #F6F6F6;
   font-size: 3vh;
   font-family: 'Dosis', sans-serif; }
 
@@ -159,19 +191,21 @@ section {
   position: absolute;
   bottom: 30px;
   right: 30px;
-  font-size: 4vh;
-  background-color: white;
-  padding: 10px;
+  width: 30vw;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  justify-content: space-around;
+  font-size: 4vh;
+  background-color: #F6F6F6;
+  padding: 10px; }
 
 .menu__photo a img {
   height: 5vw; }
 
-.menu__article  {
+.menu article {
+  height: 10vh;
   color: white;
-  font-size: 3vh;
-  font-family: 'Dosis', sans-serif; }
+  background-color: grey; }
 
 .menu__produits {
   display: flex;
@@ -179,28 +213,19 @@ section {
   width: 100vw; }
 
 .menu__produits h2 {
-  padding: 10px;
-  color: white;
-  font-family: 'Dosis', sans-serif;
+  padding: 20px;
+  background-color: #F6F6F6;
+  color: #231F20;
+  text-decoration: underline;
   font-size: 4vh;
   text-align: center; }
 
 .menu__produits__photos {
-  display: flex; }
+  display: flex;
+  flex-wrap: wrap; }
 
 .menu__produits img {
-  width: 25vw;
-  height: 25vw; }
-
-.menu article {
-  background-color: grey;
-  height: 10vh; }
-
-.menu div {
-  background-color: grey; }
-
-.menu footer {
-  height: 8vh;
-  background-color: black; }
+  width: 50%;
+  height: 20%; }
 
 /*# sourceMappingURL=styles.css.map */
