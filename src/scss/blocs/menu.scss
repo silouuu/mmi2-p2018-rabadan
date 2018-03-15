@@ -38,6 +38,7 @@
 	justify-content: space-around;
 	flex-grow: 1;
 	height: 100%;
+	padding: 10px;
 }
 .menu__header > p {
 	flex-grow: 3;
@@ -77,10 +78,15 @@
 
 
 }
+
 .menu__photo a img {
 	height: 5vw;
 }
-
+.menu__article {
+	color: white;
+	font-size: 3vh;
+	font-family: 'Dosis', sans-serif;
+}
 .menu__produits {
 	display: flex;
 	flex-direction: column;
@@ -89,6 +95,9 @@
 .menu__produits h2 {
 	padding: 10px;
 	color: white;
+
+	font-family: 'Dosis', sans-serif;
+    font-size: 4vh;
 	text-align: center;
 }
 .menu__produits__photos {
