@@ -7,14 +7,15 @@ footer {
 	padding: 15px;
 }
 footer p , footer a {
-	font-size: 2rem;
+	font-size: 1rem;
 	color: white;
 }
 footer a {
 	padding: 0px 10px;
 	border-right: 2px solid white;
 	border-left: 2px solid white;
+	border-radius: 0px;
 }
 footer>div {
-	margin: 20px;
+	margin: 10px 0px;
 }
