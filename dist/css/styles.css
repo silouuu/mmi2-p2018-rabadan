@@ -47,10 +47,17 @@ a {
 * {
   box-sizing: border-box; }
 
+/* @include medium {
+	 	font-size: 24px;
+	 }
+*/
 p, a, h1, h2, h3, h4, article {
   color: #231F20;
   font-family: 'Dosis', sans-serif;
   font-size: 1.2rem; }
+  @media (min-width: 750px) {
+    p, a, h1, h2, h3, h4, article {
+      font-size: 1.4rem; } }
 
 section {
   display: flex;
@@ -59,13 +66,18 @@ section {
   height: 100vh;
   width: 100vw; }
 
-header {
+.header {
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 10vh;
   background-color: #F6F6F6;
   font-size: 100px; }
+  .header p {
+    flex-grow: 3;
+    text-align: center;
+    font-family: 'Bungee Shade';
+    font-size: 1.6rem; }
 
 .header__logo {
   display: flex;
@@ -73,19 +85,14 @@ header {
   justify-content: center;
   flex-grow: 1;
   height: 100%; }
-
-.header__logo a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50px; }
-
-.header__logo img {
-  width: 200%;
-  height: auto; }
-
-.header__icon img {
-  height: 40%; }
+  .header__logo a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px; }
+  .header__logo img {
+    width: 200%;
+    height: auto; }
 
 .header__icon {
   display: flex;
@@ -94,61 +101,56 @@ header {
   flex-grow: 1;
   height: 100%;
   padding: 10px; }
+  .header__icon img {
+    height: 50%; }
 
-.header > p {
-  flex-grow: 3;
-  text-align: center;
-  font-family: 'Bungee Shade'; }
-
-footer {
+.footer {
   background-color: #231F20;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
   padding: 15px; }
+  .footer a {
+    padding: 0px 10px;
+    border-right: 2px solid white;
+    border-left: 2px solid white;
+    border-radius: 0px; }
+  .footer div {
+    margin: 10px 0px; }
 
-footer p, footer a {
+.footer p, .footer a {
   font-size: 1rem;
   color: white; }
 
-footer a {
-  padding: 0px 10px;
-  border-right: 2px solid white;
-  border-left: 2px solid white;
-  border-radius: 0px; }
-
-footer > div {
-  margin: 10px 0px; }
-
-.accueil {
+.home {
   background-color: #E7C3BB; }
 
-.accueil__title {
+.home__title {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
   height: 40vh;
   font-family: 'Bungee Shade', cursive;
+  font-size: 2rem;
   color: #231F20;
   text-align: center;
   padding: 20px; }
-  .accueil__title:hover {
+  .home__title:hover {
     color: white; }
+  .home__title h1 {
+    padding: 5px;
+    font-family: 'Bungee Shade';
+    font-size: 2rem; }
+  .home__title img {
+    height: 20%; }
 
-.accueil__title h1 {
-  padding: 5px;
-  font-family: 'Bungee Shade'; }
-
-.accueil__title > img {
-  height: 20%; }
-
-.accueil__img {
+.home__img {
   width: 100vw;
   height: 100vw; }
 
-.accueil__scroll {
+.home__next {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -156,9 +158,8 @@ footer > div {
   padding: 20px;
   font-family: 'Permanent Marker', cursive;
   font-size: 4rem; }
-
-.accueil__scroll img {
-  height: 8vh; }
+  .home__next img {
+    height: 8vh; }
 
 .menu {
   height: auto;
@@ -170,41 +171,43 @@ footer > div {
   background-image: url(../img/shoes_jump.jpg);
   background-size: cover;
   background-position: center; }
-
-.menu__photo p {
-  text-align: justify;
-  color: #F6F6F6;
-  padding: 30px; }
-
-.menu__photo a {
-  position: absolute;
-  bottom: 30px;
-  display: flex;
-  align-items: center;
-  background-color: #F6F6F6; }
-
-.menu__photo a:nth-child(3) {
-  right: 30px; }
-
-.menu__photo a:nth-child(2) {
-  left: 30px; }
+  .menu__photo p {
+    text-align: justify;
+    color: #F6F6F6;
+    padding: 30px; }
+    @media (min-width: 400px) {
+      .menu__photo p {
+        width: 60vw;
+        position: absolute;
+        right: 0px; } }
+  .menu__photo a {
+    position: absolute;
+    bottom: 30px;
+    display: flex;
+    align-items: center;
+    background-color: #F6F6F6; }
+    .menu__photo a:nth-child(3) {
+      right: 30px; }
+    .menu__photo a:nth-child(2) {
+      left: 30px; }
 
 a {
   padding: 10px;
   border-radius: 5px; }
+  a img {
+    height: 5vw; }
 
-a img {
-  height: 5vw; }
-
-.menu article {
+.menu__article {
   background-color: grey;
   padding: 15px;
   border-radius: 5px;
   margin: 7vw; }
-
-.menu article p {
-  color: white;
-  text-align: center; }
+  @media (min-width: 400px) {
+    .menu__article {
+      margin: 3vw; } }
+  .menu__article p {
+    color: white;
+    text-align: center; }
 
 .menu article:first-of-type p {
   font-family: 'Bungee Shade', cursive;
@@ -224,30 +227,266 @@ a img {
   height: 400px;
   background: url("../img/nike_text_mobile.jpg");
   background-size: cover;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  background-position: center; }
+  @media (min-width: 750px) {
+    .menu__parallax {
+      background: url(../img/nike_text.jpg);
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center; } }
 
 .menu__produits {
   display: flex;
   flex-direction: column;
   width: 100vw; }
+  .menu__produits h2 {
+    padding: 20px;
+    background-color: #F6F6F6;
+    color: #231F20;
+    text-decoration: underline;
+    font-size: 4vh;
+    text-align: center; }
+  .menu__produits img {
+    width: 50%;
+    height: 20%; }
+    @media (min-width: 400px) {
+      .menu__produits img {
+        width: 25%; } }
 
-.menu__produits h2 {
-  padding: 20px;
-  background-color: #F6F6F6;
-  color: #231F20;
-  text-decoration: underline;
-  font-size: 4vh;
-  text-align: center; }
-
-.menu__produits__photos {
+.menu__photos {
   display: flex;
   flex-wrap: wrap; }
 
-.menu__produits img {
-  width: 50%;
-  height: 20%; }
-
 .menu__app {
   width: 100vw; }
+
+.perf {
+  height: auto;
+  width: 100vw;
+  background-size: 30%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-around;
+  overflow-x: hidden; }
+
+.nikeText {
+  height: 25vh;
+  display: flex;
+  align-items: center;
+  padding: 20px; }
+
+/*
+.shoes {
+	height: 500px;
+	width: 400px;
+	background-image: url(./Nike_Retail.png);
+	background-size: cover;
+	position: relative;
+}*/
+/*
+.swoosh {
+	height: 30px;
+	width: 30px;
+
+	position: relative;
+	top: 50px;
+	right: 100px;
+
+	background-color: white;
+	opacity: 0.8;
+	border-radius: 50%;
+
+	position:absolute; top: 70%; left:90%;
+}
+.swoosh:hover{
+	opacity: 1;
+	cursor: pointer;
+}
+*/
+/* --------------------------- */
+.img-overlay {
+  position: relative; }
+
+.img-overlay img {
+  width: 150vw;
+  height: auto;
+  display: block; }
+
+/*.project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}*/
+/* ---- POINTS ---- */
+.dot {
+  background-color: white;
+  border-radius: 50%;
+  height: 3%;
+  width: 2%;
+  position: absolute; }
+  .dot:hover {
+    opacity: 1;
+    cursor: pointer;
+    border: 2px solid #E7C3BB; }
+
+/* positionnement */
+.flymesh {
+  top: 60%;
+  left: 35%; }
+
+.flymeshCanvas {
+  display: none;
+  /*position: absolute;*/
+  right: 100%;
+  top: 50%;
+  height: 13vh;
+  width: 18vw;
+  border-top: 3px dashed #E7C3BB;
+  border-left: 3px dashed #E7C3BB; }
+
+.laces {
+  top: 40%;
+  left: 45%; }
+
+.lacesCanvas {
+  display: none;
+  /*position: absolute;*/
+  right: 50%;
+  bottom: 100%;
+  height: 28vh;
+  width: 15vw;
+  border-top: 3px dashed #E7C3BB;
+  border-right: 3px dashed #E7C3BB; }
+
+.waves {
+  top: 32%;
+  right: 33%; }
+
+.wavesCanvas {
+  display: none;
+  /*position: absolute;*/
+  left: 50%;
+  bottom: 100%;
+  height: 20vh;
+  width: 15vw;
+  border-top: 3px dashed #E7C3BB;
+  border-right: 3px dashed #E7C3BB;
+  border-left: 3px dashed #E7C3BB; }
+
+.bubble {
+  top: 57%;
+  right: 43%; }
+
+.bubbleCanvas {
+  display: none;
+  /*position: absolute;*/
+  left: 100%;
+  top: 50%;
+  height: 14vh;
+  width: 20vw;
+  border-top: 3px dashed #E7C3BB;
+  border-right: 3px dashed #E7C3BB; }
+
+/* --- TEXTE --- */
+canvas, .dotText, .mobileText {
+  display: none; }
+
+.dotText {
+  display: none;
+  position: relative;
+  width: 25vw;
+  background-color: #E7C3BB;
+  padding: 5px;
+  text-align: justify; }
+
+.flymesh:hover .flymeshMobile {
+  display: block; }
+
+.laces:hover .lacesMobile {
+  display: block; }
+
+.waves:hover .wavesMobile {
+  display: block; }
+
+.bubble:hover .bubbleMobile {
+  display: block; }
+
+.flymesh:hover .flymeshText {
+  display: block;
+  top: 200%;
+  right: 1500%; }
+
+.laces:hover .lacesText {
+  display: block;
+  bottom: 1000%;
+  right: 2000%; }
+
+.waves:hover .wavesText {
+  display: block;
+  bottom: 500%;
+  left: 300%; }
+
+.bubble:hover .bubbleText {
+  display: block;
+  top: 300%;
+  left: 500%; }
+
+/*
+
+.flymesh:hover .flymeshText{
+	display: block;
+	top: 200%;
+	right: 1500%;
+}
+.laces:hover .lacesText{
+	display: block;
+	bottom: 1000%;
+	right: 2000%; 
+}
+.waves:hover .wavesText{
+	display: block;
+	bottom: 500%;
+	left: 300%;
+}
+.bubble:hover .bubbleText{
+	display: block;
+	top: 300%;
+	left: 500%;
+}
+.flymesh:hover .flymeshCanvas{
+	display: block;
+}
+
+.laces:hover .lacesCanvas{
+	display: block;
+}
+
+.waves:hover .wavesCanvas{
+	display: block;
+}
+
+.bubble:hover .bubbleCanvas{
+	display: block;
+}
+*/
+@media (max-width: 640px) {
+  .dot {
+    background-color: black; }
+  .img_nike {
+    width: 100vw;
+    height: 50vh;
+    background-image: url(./Nike_Retail.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center; }
+  .nikeText {
+    background-color: #E7C3BB; }
+  .desktop p {
+    display: none; } }
 
 /*# sourceMappingURL=styles.css.map */

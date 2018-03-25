@@ -1,0 +1,27 @@
+$small: 400px; 
+$medium: 750px;
+$large: 1024px;
+
+@mixin small {
+  @media (min-width: #{$small}) {
+    @content;
+  }
+}
+
+@mixin medium {
+  @media (min-width: #{$medium}) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media (min-width: #{$large}) {
+    @content;
+  }
+}
+
+
+/* @include medium {
+	 	font-size: 24px;
+	 }
+*/

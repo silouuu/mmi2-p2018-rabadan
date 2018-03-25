@@ -1,0 +1,130 @@
+.menu {
+	height: auto;
+	background-color: $rose;
+}
+
+.menu__photo {
+	position: relative;
+	height: 50vh;	
+	background-image: url(../img/shoes_jump.jpg);
+	background-size: cover;
+	background-position: center;
+
+    p {
+        text-align: justify;
+        color: $white;
+        padding: 30px;
+        
+        @include small {
+            width:60vw;
+            position: absolute;
+            right: 0px;
+        }
+    }
+    a {
+        position: absolute;
+        bottom: 30px;
+        display: flex;
+        align-items: center;
+        background-color: $white;
+
+        &:nth-child(3) {
+            right: 30px;
+        }
+        &:nth-child(2){
+            left: 30px;
+        }
+    }
+}
+a {
+	padding: 10px;
+	border-radius: 5px;
+    img {
+        height: 5vw;
+    }
+}
+
+.menu__article {
+	background-color: grey;
+	padding: 15px;
+	border-radius: 5px;
+	margin: 7vw;
+
+    @include small {
+        margin: 3vw;
+    }
+    p {
+        color: white;
+        text-align: center;
+    }
+}
+.menu article:first-of-type p{
+	font-family: 'Bungee Shade', cursive;
+
+	font-size: 2rem;
+}
+.menu__article>a{
+	background-color: black;
+    color: ghostwhite;
+    position: absolute;
+    right: 30px;
+    font-size: 1rem;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.menu__parallax{
+	width: 100%;
+	height: 400px;
+	background: url('../img/nike_text_mobile.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+    background-position: center;
+
+    @include medium {
+        background: url(../img/nike_text.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+    }
+}
+.menu__produits {
+	display: flex;
+	flex-direction: column;
+	width: 100vw;
+
+    h2 {
+        padding: 20px;
+        background-color: $white;
+        color: $black;
+        text-decoration: underline;
+
+        font-size: 4vh;
+        text-align: center;
+    }
+    img{
+        width: 50%;
+        height: 20%;
+        
+        @include small {
+            width:25%;
+        }
+    }
+}
+.menu__photos {
+	display: flex;
+	flex-wrap: wrap;
+}
+.menu__app {
+	width: 100vw;
+}
+
+
+
+
+
+
+
+
+
+

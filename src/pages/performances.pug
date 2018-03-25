@@ -1,67 +1,39 @@
 include ../partials/header.pug
 
-<section>
-<div class="img-overlay">
 
-<div class="img_nike">
-
-</div>
-<div class="nikeText">L’empreinte Flymesh permet d’offrir un maintien et une respirabilité précisément dans les zones où votre pied en a besoin. </div>
-<div class="desktop">
-<div class="flymesh dot">
-<canvas class="flymeshCanvas"></canvas>
-<p class="flymeshText dotText">L’empreinte Flymesh permet d’offrir un maintien et une respirabilité précisément dans les zones où votre pied en a besoin. L’ajout de mousse moulée permet quant à elle d’envelopper votre pied au mieux pour un maintien parfait et un confort exceptionnel ! Les Air Max sont connues pour leur confort, cette version 2017 va encore plus loin ! Vous aurez l’impression de glisser votre pied dans un chausson… mais un chausson de sport</p>
-</div>
-<div class="laces dot">
-<canvas class="lacesCanvas"></canvas>
-<p class="lacesText dotText">La Air Max 2017 est comme toujours disponible en plusieurs coloris et peut même être personnalisée. Vous pouvez ainsi en plus des nombreux choix de couleurs de chacune des parties, choisir d’ajouter du texte, de mettre des taches de peinture sur la bulle d’air, de choisir des lacets de 2 couleurs ou même de choisir une empreinte dégradée ! Une personnalisation maximale !</p>
-</div>
-<div class="waves dot">
-<canvas class="wavesCanvas"></canvas>
-<p class="wavesText dotText">la Nike Air Max 2017 est surtout reconnaissable par ses vagues qui partent du talon pour rejoindre le milieu de la chaussure. Cette nouveauté apporte de la « rondeur » et de la douceur à la chaussure et surtout une modernité marquée.</p>
-</div>
-<div class="bubble dot">
-<canvas class="bubbleCanvas"></canvas>
-<p class="bubbleText dotText">Que serait une Max sans sa bulle d’air ? Cette version 2017 embarque une unité Max Air sur toute la longueur du pied. En plus de la semelle totalement transparente, le principal intérêt est surtout un amorti parfait et des transitions en douceur. Pour gagner (encore) un peu plus en confort… Des rainures flexibles sont alignées sur la bulle d’air pour gagner en souplesse… et donc encore une fois en confort !</p>
-</div>
-</div>
-
-</div>
+<section class="perf">
+    <div class="img-overlay">
+        <img src="img/Nike_Retail.jpg"/>
+        <div class="desktop">
+            <div class="flymesh dot" onclick="flymesh()">
+                <canvas class="flymeshCanvas"></canvas>
+                <p class="flymeshText dotText">L’empreinte Flymesh permet d’offrir un maintien et une respirabilité précisément dans les zones où votre pied en a besoin. L’ajout de mousse moulée permet quant à elle d’envelopper votre pied au mieux pour un maintien parfait et un confort exceptionnel ! Les Air Max sont connues pour leur confort, cette version 2017 va encore plus loin ! Vous aurez l’impression de glisser votre pied dans un chausson… mais un chausson de sport</p>
+            </div>
+            <div class="laces dot">
+                <canvas class="lacesCanvas"></canvas>
+                <p class="lacesText dotText">La Air Max 2017 est comme toujours disponible en plusieurs coloris et peut même être personnalisée. Vous pouvez ainsi en plus des nombreux choix de couleurs de chacune des parties, choisir d’ajouter du texte, de mettre des taches de peinture sur la bulle d’air, de choisir des lacets de 2 couleurs ou même de choisir une empreinte dégradée ! Une personnalisation maximale !</p>
+            </div>
+            <div class="waves dot">
+                <canvas class="wavesCanvas"></canvas>
+                <p class="wavesText dotText">la Nike Air Max 2017 est surtout reconnaissable par ses vagues qui partent du talon pour rejoindre le milieu de la chaussure. Cette nouveauté apporte de la « rondeur » et de la douceur à la chaussure et surtout une modernité marquée.</p>
+            </div>
+            <div class="bubble dot">
+                <canvas class="bubbleCanvas"></canvas>
+                <p class="bubbleText dotText">Que serait une Max sans sa bulle d’air ? Cette version 2017 embarque une unité Max Air sur toute la longueur du pied. En plus de la semelle totalement transparente, le principal intérêt est surtout un amorti parfait et des transitions en douceur. Pour gagner (encore) un peu plus en confort… Des rainures flexibles sont alignées sur la bulle d’air pour gagner en souplesse… et donc encore une fois en confort !</p>
+            </div>
+            
+        </div>
+    </div>
+    <div class="mobile nikeText">
+        <p> Cliquez sur les différentes parties de la Air Max pour en savoir plus !</p>
+        <p class="flymeshMobile mobileText">L’empreinte Flymesh permet d’offrir un maintien et une respirabilité précisément dans les zones où votre pied en a besoin. L’ajout de mousse moulée permet quant à elle d’envelopper votre pied au mieux pour un maintien parfait et un confort exceptionnel ! Les Air Max sont connues pour leur confort, cette version 2017 va encore plus loin ! Vous aurez l’impression de glisser votre pied dans un chausson… mais un chausson de sport</p>
+        <p class="lacesMText mobileText">La Air Max 2017 est comme toujours disponible en plusieurs coloris et peut même être personnalisée. Vous pouvez ainsi en plus des nombreux choix de couleurs de chacune des parties, choisir d’ajouter du texte, de mettre des taches de peinture sur la bulle d’air, de choisir des lacets de 2 couleurs ou même de choisir une empreinte dégradée ! Une personnalisation maximale !</p>
+        <p class="wavesMText mobileText">la Nike Air Max 2017 est surtout reconnaissable par ses vagues qui partent du talon pour rejoindre le milieu de la chaussure. Cette nouveauté apporte de la « rondeur » et de la douceur à la chaussure et surtout une modernité marquée.</p>
+        <p class="bubbleMText mobileText">Que serait une Max sans sa bulle d’air ? Cette version 2017 embarque une unité Max Air sur toute la longueur du pied. En plus de la semelle totalement transparente, le principal intérêt est surtout un amorti parfait et des transitions en douceur. Pour gagner (encore) un peu plus en confort… Des rainures flexibles sont alignées sur la bulle d’air pour gagner en souplesse… et donc encore une fois en confort !</p>
+    </div>
 </section>
 
-<section>
-<div class="img-overlay">
-
-<img src="./Nike_Retail.jpg"/>
-<div class="desktop">
-<div class="flymesh dot">
-<canvas class="flymeshCanvas"></canvas>
-<p class="flymeshText dotText">L’empreinte Flymesh permet d’offrir un maintien et une respirabilité précisément dans les zones où votre pied en a besoin. L’ajout de mousse moulée permet quant à elle d’envelopper votre pied au mieux pour un maintien parfait et un confort exceptionnel ! Les Air Max sont connues pour leur confort, cette version 2017 va encore plus loin ! Vous aurez l’impression de glisser votre pied dans un chausson… mais un chausson de sport</p>
-</div>
-<div class="laces dot">
-<canvas class="lacesCanvas"></canvas>
-<p class="lacesText dotText">La Air Max 2017 est comme toujours disponible en plusieurs coloris et peut même être personnalisée. Vous pouvez ainsi en plus des nombreux choix de couleurs de chacune des parties, choisir d’ajouter du texte, de mettre des taches de peinture sur la bulle d’air, de choisir des lacets de 2 couleurs ou même de choisir une empreinte dégradée ! Une personnalisation maximale !</p>
-</div>
-<div class="waves dot">
-<canvas class="wavesCanvas"></canvas>
-<p class="wavesText dotText">la Nike Air Max 2017 est surtout reconnaissable par ses vagues qui partent du talon pour rejoindre le milieu de la chaussure. Cette nouveauté apporte de la « rondeur » et de la douceur à la chaussure et surtout une modernité marquée.</p>
-</div>
-<div class="bubble dot">
-<canvas class="bubbleCanvas"></canvas>
-<p class="bubbleText dotText">Que serait une Max sans sa bulle d’air ? Cette version 2017 embarque une unité Max Air sur toute la longueur du pied. En plus de la semelle totalement transparente, le principal intérêt est surtout un amorti parfait et des transitions en douceur. Pour gagner (encore) un peu plus en confort… Des rainures flexibles sont alignées sur la bulle d’air pour gagner en souplesse… et donc encore une fois en confort !</p>
-</div>
-</div>
-
-</div>
-<div class="nikeText">
-<p>Que serait une Max sans sa bulle d’air ? Cette version 2017 embarque une unité Max Air sur toute la longueur du pied. En plus de la semelle totalement transparente, le principal intérêt est surtout un amorti parfait et des transitions en douceur. Pour gagner (encore) un peu plus en confort… Des rainures flexibles sont alignées sur la bulle d’air pour gagner en souplesse… et donc encore une fois en confort !</p>
-</div>
-</section>
-
-
-<section>
-<img src="img/nike_retail.jpg">
-</section>
+<script type="text/javascript" src="./js/script.js"></script>
 
 include ../partials/footer.pug
 

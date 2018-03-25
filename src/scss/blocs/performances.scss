@@ -1,0 +1,270 @@
+.perf img {
+}
+
+.perf {
+    height: auto;
+    width: 100vw;
+    background-size: 30%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-around;
+    overflow-x:hidden;
+}
+
+.nikeText {
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+
+/*
+.shoes {
+	height: 500px;
+	width: 400px;
+	background-image: url(./Nike_Retail.png);
+	background-size: cover;
+	position: relative;
+}*/
+/*
+.swoosh {
+	height: 30px;
+	width: 30px;
+
+	position: relative;
+	top: 50px;
+	right: 100px;
+
+	background-color: white;
+	opacity: 0.8;
+	border-radius: 50%;
+
+	position:absolute; top: 70%; left:90%;
+}
+.swoosh:hover{
+	opacity: 1;
+	cursor: pointer;
+}
+*/
+
+/* --------------------------- */
+
+.img-overlay {
+    position: relative;
+    
+}
+.img-overlay img{
+
+	width:150vw;
+	height: auto;
+	display:block;
+}
+
+/*.project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}*/
+/* ---- POINTS ---- */
+.dot {
+    background-color: white;
+    border-radius: 50%;
+    height: 3%;
+    width: 2%;
+
+    position: absolute;
+
+    &:hover{
+        opacity: 1;
+        cursor: pointer;
+        border: 2px solid #E7C3BB;
+    }
+}
+
+/* positionnement */
+.flymesh {
+	top: 60%;
+	left: 35%;	
+}
+.flymeshCanvas {
+	display: none;
+	/*position: absolute;*/
+	right: 100%;
+	top: 50%;
+    height: 13vh;
+    width: 18vw;
+    border-top: 3px dashed #E7C3BB;
+    border-left: 3px dashed #E7C3BB;
+
+}
+.laces {
+	top: 40%;
+	left: 45%;
+}
+.lacesCanvas {
+	display: none;
+	/*position: absolute;*/
+	right: 50%;
+	bottom: 100%;
+    height: 28vh;
+    width: 15vw;
+    border-top: 3px dashed #E7C3BB;
+    border-right: 3px dashed #E7C3BB;
+}
+.waves {
+	top: 32%;
+	right: 33%;
+}
+.wavesCanvas {
+	display: none;
+	/*position: absolute;*/
+	left: 50%;
+	bottom: 100%;
+    height: 20vh;
+    width: 15vw;
+    border-top: 3px dashed #E7C3BB;
+    border-right: 3px dashed #E7C3BB;
+    border-left: 3px dashed #E7C3BB;
+}
+.bubble {
+	top: 57%;
+	right: 43%;
+}
+.bubbleCanvas {
+	display: none;
+	/*position: absolute;*/
+	left: 100%;
+    top: 50%;
+    height: 14vh;
+    width: 20vw;
+    border-top: 3px dashed #E7C3BB;
+    border-right: 3px dashed #E7C3BB;
+}
+
+/* --- TEXTE --- */
+canvas, .dotText, .mobileText {
+	display: none;
+}
+.dotText{
+	display: none;
+	position: relative;
+	width: 25vw;
+	background-color: #E7C3BB;
+	padding: 5px;
+	text-align: justify;
+}
+
+.flymesh:hover .flymeshMobile{
+	display: block;
+}
+.laces:hover .lacesMobile{
+	display: block;
+}
+.waves:hover .wavesMobile{
+	display: block;
+}
+.bubble:hover .bubbleMobile{
+	display: block;
+}
+
+.flymesh:hover .flymeshText{
+	display: block;
+	top: 200%;
+	right: 1500%;
+}
+.laces:hover .lacesText{
+	display: block;
+	bottom: 1000%;
+	right: 2000%; 
+}
+.waves:hover .wavesText{
+	display: block;
+	bottom: 500%;
+	left: 300%;
+}
+.bubble:hover .bubbleText{
+	display: block;
+	top: 300%;
+	left: 500%;
+}
+
+/*
+
+.flymesh:hover .flymeshText{
+	display: block;
+	top: 200%;
+	right: 1500%;
+}
+.laces:hover .lacesText{
+	display: block;
+	bottom: 1000%;
+	right: 2000%; 
+}
+.waves:hover .wavesText{
+	display: block;
+	bottom: 500%;
+	left: 300%;
+}
+.bubble:hover .bubbleText{
+	display: block;
+	top: 300%;
+	left: 500%;
+}
+.flymesh:hover .flymeshCanvas{
+	display: block;
+}
+
+.laces:hover .lacesCanvas{
+	display: block;
+}
+
+.waves:hover .wavesCanvas{
+	display: block;
+}
+
+.bubble:hover .bubbleCanvas{
+	display: block;
+}
+*/
+
+@media (max-width: 640px) {
+	.dot {
+		background-color: black;
+	}
+	.img_nike {
+		width: 100vw;
+		height: 50vh;
+		background-image: url(./Nike_Retail.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position-x:center;
+	}
+	.nikeText {
+		background-color: #E7C3BB;
+	}
+	.desktop p  {
+		display: none;
+	}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

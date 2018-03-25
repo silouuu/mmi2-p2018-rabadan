@@ -1,6 +1,7 @@
 import { User } from './user';
+import './hover';
 
 console.log('Welcome !');
 
-let name = 'Bastien';
+let name = 'Siloé';
 const user = new User(name);
