@@ -1,7 +1,6 @@
 
-.header {
+.header__mobile {
     display: flex;
-
     justify-content: space-around;
     align-items: center;
     height: 10vh;
@@ -14,7 +13,7 @@
         font-size:1.6rem;
     }
 }
-.header__logo {
+.mobile__logo {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -33,7 +32,7 @@
         height: auto;
     }
 }
-.header__icon {
+.mobile__icon {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -44,4 +43,40 @@
         height: 50%;
     }
 }
+
+.header__desktop {
+    display: none;
+    background-color: white;
+    padding: 10px;
+    @include medium {
+        display: block;
+    }
+}
+
+.desktop__menu {
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Dosis', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    li{
+        padding: 5px;
+        &:hover a{
+            background-color:$grey;
+            color: $white;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 
