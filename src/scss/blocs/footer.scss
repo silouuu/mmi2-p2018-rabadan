@@ -5,6 +5,10 @@
     align-items: center;
     justify-content: space-around;
     padding: 15px;
+    position: relative;
+    @include medium {
+        flex-direction:row;
+    }
 
     a {
         padding: 0px 10px;
